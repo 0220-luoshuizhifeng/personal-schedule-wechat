@@ -1,0 +1,42 @@
+// ============================================
+// 主题配色变量（明日任务 · 日程管家）
+// 适老化：高对比、清晰红绿语义色
+// ============================================
+
+// 品牌主题色：沉稳清晰的蓝
+$color-primary: #2563eb;
+$color-primary-light: #4f86f7;
+$color-primary-dark: #1d4ed8;
+
+// 功能色（强对比红绿）
+$color-success: #16a34a;
+$color-warning: #f59e0b;
+$color-error: #dc2626;
+$color-info: #2563eb;
+
+// 背景色
+$color-bg-page: #f1f4f9;
+$color-bg-card: #ffffff;
+$color-bg-hover: #eef2f8;
+
+// 文本色
+$color-text-primary: #161b26;
+$color-text-secondary: #4b5565;
+$color-text-tertiary: #8a93a6;
+$color-text-disabled: #c4cad6;
+$color-text-white: #ffffff;
+
+// 边框色
+$color-border: #e3e8f0;
+$color-divider: #eef1f6;
+
+// 业务色：任务完成 / 逾期
+$color-done: #16a34a;
+$color-overdue: #dc2626;
+
+// 分类模块色（知识 / 美食 / 运动 / 工作 / 私事）
+$color-cat-knowledge: #7c3aed;
+$color-cat-food: #ea580c;
+$color-cat-sport: #16a34a;
+$color-cat-work: #2563eb;
+$color-cat-personal: #db2777;

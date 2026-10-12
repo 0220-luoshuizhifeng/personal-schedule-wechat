@@ -1,0 +1,207 @@
+@use '@/styles/variables.scss' as *;
+
+.wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+}
+
+.dayHeader {
+  display: flex;
+  flex-shrink: 0;
+  border-bottom: 2rpx solid $color-divider;
+  padding-top: $spacing-sm;
+}
+
+.gutterHead {
+  width: 72rpx;
+  flex-shrink: 0;
+}
+
+.dayHead {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rpx;
+  box-sizing: border-box;
+}
+
+.weekday {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}
+
+.weekdayToday {
+  color: $color-primary;
+  font-weight: $font-weight-semibold;
+}
+
+.dateBadge {
+  margin: 4rpx 0;
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: $radius-round;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dateBadgeToday {
+  background: $color-primary;
+}
+
+.dateText {
+  font-size: $font-size-md;
+  color: $color-text-primary;
+  line-height: 1;
+}
+
+.dateTextToday {
+  color: $color-text-white;
+  font-weight: $font-weight-semibold;
+}
+
+.allDayBox {
+  width: 100%;
+  min-height: 8rpx;
+  padding-bottom: 6rpx;
+}
+
+.allDayChip {
+  border-radius: $radius-xs;
+  padding: 2rpx 6rpx;
+  margin: 4rpx 0;
+  overflow: hidden;
+}
+
+.allDayText {
+  font-size: 20rpx;
+  @include text-ellipsis;
+}
+
+.scroll {
+  flex: 1;
+  min-height: 0;
+}
+
+.gridInner {
+  position: relative;
+  display: flex;
+}
+
+.gutter {
+  flex-shrink: 0;
+}
+
+.hourCell {
+  position: relative;
+}
+
+.hourText {
+  position: absolute;
+  top: -14rpx;
+  right: 8rpx;
+  font-size: 20rpx;
+  color: $color-text-tertiary;
+}
+
+.anchor {
+  position: absolute;
+  top: 0;
+  width: 1rpx;
+  height: 1rpx;
+}
+
+.columns {
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  position: relative;
+  border-right: 2rpx solid $color-divider;
+  box-sizing: border-box;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+.hourLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 2rpx solid $color-divider;
+}
+
+.nowLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 2rpx solid $color-error;
+  z-index: 15;
+  pointer-events: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -6rpx;
+    top: -8rpx;
+    width: 14rpx;
+    height: 14rpx;
+    border-radius: $radius-round;
+    background: $color-error;
+  }
+}
+
+.selection {
+  position: absolute;
+  left: 4rpx;
+  right: 4rpx;
+  background: rgba(37, 99, 235, 0.15);
+  border: 2rpx dashed $color-primary;
+  border-radius: $radius-sm;
+  z-index: 12;
+}
+
+.block {
+  position: absolute;
+  left: 4rpx;
+  right: 4rpx;
+  border-radius: $radius-sm;
+  padding: 4rpx 8rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.blockDone {
+  opacity: 0.65;
+}
+
+.blockTitle {
+  display: block;
+  font-size: 22rpx;
+  font-weight: $font-weight-semibold;
+  line-height: 1.3;
+  @include text-ellipsis;
+}
+
+.blockTime {
+  display: block;
+  font-size: 20rpx;
+  color: $color-text-secondary;
+}
+
+.resizeHandle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 18rpx;
+}

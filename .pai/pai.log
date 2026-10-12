@@ -1,0 +1,64 @@
+[19:31:35.650] Try reusing port from lock file: 59257
+[19:31:35.674] Server listening on port 59257, PID 30364
+[19:31:35.700] readProjectFiles, Found 58 files to read.
+[19:31:35.847] Starting PAI Cloud Dev...
+[19:31:36.929] [PAI SDK] createCloudSession response: {
+  "code": 0,
+  "msg": "success",
+  "sandboxId": "vefaas-f0vkicge-zwx1wbt5u0-dar5n782pvdiobb84r1g-sandbox",
+  "endpoint": "https://sd62opo6oqou1ckhsuo00.apigateway-cn-beijing.volceapi.com"
+}
+[19:31:37.231] [PAI SDK] cloudServer.start called, appId: pai-preview-trae-a6758adb
+[19:31:38.060] [PAI SDK] Received event: log {"content":"\n> taro_template@1.0.0 dev:h5\n> npm run build:h5 -- --watch\n\n\n> taro_template@1.0.0 build:h5\n> taro build --type h5 --watch\n\n","timestamp":1790335903296}
+[19:31:38.376] [PAI SDK] Received event: log {"content":"👽 Taro v4.1.9\n\n","timestamp":1790335903710}
+[19:31:39.725] [PAI SDK] Received event: log {"content":"Tips:\n1. 建议开启持久化缓存功能，能有效提升二次编译速度，详情请参考: https://docs.taro.zone/docs/config-detail#cache。\n\n\n","timestamp":1790335905059}
+[19:31:40.954] [PAI SDK] Received event: log {"content":"- 即将开始启动编译，请稍等~\n","timestamp":1790335906288}
+[19:31:56.276] [PAI SDK] Received event: log {"content":"✅  编译成功 9/25/2026, 7:32:01 PM\n\n","timestamp":1790335921568}
+[19:31:56.276] [PAI SDK] cloudServer.start response: {
+  "status": "running",
+  "msg": "Cloud Server started successfully.",
+  "hash": "pai-preview-trae-a6758adb"
+}
+[19:32:20.057] [Preview Server] Frontend connected, clients size = 1
+[19:32:20.058] Sending cached status to new connection, lastStatusMessage = {"event":"status_change","message":{"url":"https://sd62opo6oqou1ckhsuo00.apigateway-cn-beijing.volceapi.com/?faasInstanceName=vefaas-f0vkicge-zwx1wbt5u0-dar5n782pvdiobb84r1g-sandbox&hash=pai-preview-trae-a6758adb","schema":"aipa://preview?type=pai&aipa_id=pai-preview-trae-a6758adb&uuid=cf53765e-c290-4903-b00e-eec4874280f9","status":"running","msg":"Cloud Server started successfully.","framework":"taro"}}
+[19:32:44.274] [Preview Server] Frontend disconnected, clients size = 1
+[20:30:57.990] [PAI SDK] WebSocket closed, reconnecting (1/3)...
+[20:31:08.177] [Global WebSocket] Suppressed error to prevent crash: Unexpected server response: 404
+[20:31:08.178] [PAI SDK] WebSocket closed, reconnecting (1/3)...
+[22:54:58.822] [Preview Server] Frontend connected, clients size = 1
+[22:54:58.823] [PAI SDK] Sandbox disconnected, recreating...
+[22:54:58.923] [PAI SDK] createCloudSession error: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13392:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  [cause]: Error: getaddrinfo ENOTFOUND pai.mobile.volcapp.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'pai.mobile.volcapp.com'
+  }
+}
+[22:54:58.929] [Preview Server] ensureAlive failed: Failed to recreate sandbox
+[22:54:58.930] Sending cached status to new connection, lastStatusMessage = {"event":"status_change","message":{"url":"https://sd62opo6oqou1ckhsuo00.apigateway-cn-beijing.volceapi.com/?faasInstanceName=vefaas-f0vkicge-zwx1wbt5u0-dar5n782pvdiobb84r1g-sandbox&hash=pai-preview-trae-a6758adb","schema":"aipa://preview?type=pai&aipa_id=pai-preview-trae-a6758adb&uuid=cf53765e-c290-4903-b00e-eec4874280f9","status":"running","msg":"Cloud Server started successfully.","framework":"taro"}}
+[22:54:58.931] Sending cached status to new connection, lastErrorMessage = {"event":"pnpm_error","message":"Failed to recreate sandbox","autoFixable":true}
+[22:54:58.942] [Global WebSocket] Suppressed error to prevent crash: getaddrinfo ENOTFOUND sd62opo6oqou1ckhsuo00.apigateway-cn-beijing.volceapi.com
+[22:54:58.943] [PAI SDK] WebSocket closed, reconnecting (1/3)...
+[22:55:06.283] [PAI SDK] createCloudSession response: {
+  "code": 0,
+  "msg": "success",
+  "sandboxId": "vefaas-f0vkicge-zwx1wbt5u0-dar8mjo2aa6apbb9ctc0-sandbox",
+  "endpoint": "https://sd62opo6oqou1ckhsuo00.apigateway-cn-beijing.volceapi.com"
+}
+[22:55:06.464] [PAI SDK] cloudServer.start called, appId: pai-preview-trae-a6758adb
+[22:55:07.047] [PAI SDK] Received event: log {"content":"\n> taro_template@1.0.0 dev:h5\n> npm run build:h5 -- --watch\n\n\n> taro_template@1.0.0 build:h5\n> taro build --type h5 --watch\n\n","timestamp":1790348112651}
+[22:55:07.424] [PAI SDK] Received event: log {"content":"👽 Taro v4.1.9\n\n","timestamp":1790348113029}
+[22:55:08.699] [PAI SDK] Received event: log {"content":"Tips:\n1. 建议开启持久化缓存功能，能有效提升二次编译速度，详情请参考: https://docs.taro.zone/docs/config-detail#cache。\n\n\n","timestamp":1790348114304}
+[22:55:09.882] [PAI SDK] Received event: log {"content":"- 即将开始启动编译，请稍等~\n","timestamp":1790348115486}
+[22:55:25.018] [PAI SDK] Received event: log {"content":"✅  编译成功 9/25/2026, 10:55:30 PM\n\n","timestamp":1790348130572}
+[22:55:25.019] [PAI SDK] cloudServer.start response: {
+  "status": "running",
+  "msg": "Cloud Server started successfully.",
+  "hash": "pai-preview-trae-a6758adb"
+}
+[22:58:02.183] [AuthCredentials] read failed: ENOENT: no such file or directory, open 'C:\Users\14585\Desktop\学习文档\大二\TRAE's work\.auth\auth.json'
+[22:59:30.104] [Preview Server] Frontend disconnected, clients size = 1

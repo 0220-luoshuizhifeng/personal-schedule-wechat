@@ -1,0 +1,255 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  padding: $spacing-md $spacing-lg 160rpx;
+  box-sizing: border-box;
+}
+
+.focusCard {
+  background: linear-gradient(135deg, $color-primary 0%, $color-primary-light 100%);
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.25);
+}
+
+.focusTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.focusLabel {
+  font-size: $font-size-sm;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.focusDate {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+  color: $color-text-white;
+  margin-top: 4rpx;
+}
+
+.focusEmoji {
+  font-size: 64rpx;
+}
+
+.progressRow {
+  margin-top: $spacing-md;
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.progressTrack {
+  flex: 1;
+  height: 16rpx;
+  border-radius: $radius-round;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: $radius-round;
+  background: $color-text-white;
+  transition: width $transition-base;
+}
+
+.progressText {
+  font-size: $font-size-sm;
+  color: $color-text-white;
+  font-weight: $font-weight-semibold;
+  white-space: nowrap;
+}
+
+.focusList {
+  margin-top: $spacing-md;
+}
+
+.focusItem {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: $radius-md;
+  padding: $spacing-sm $spacing-md;
+  margin-bottom: $spacing-sm;
+}
+
+.focusCheck {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: $radius-round;
+  border: 4rpx solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: $spacing-md;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.focusCheckDone {
+  background: $color-text-white;
+  border-color: $color-text-white;
+}
+
+.focusCheckIcon {
+  color: $color-primary;
+  font-size: 30rpx;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+}
+
+.focusItemTitle {
+  flex: 1;
+  min-width: 0;
+  font-size: $font-size-md;
+  color: $color-text-white;
+  @include text-ellipsis;
+}
+
+.focusItemTitleDone {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: line-through;
+}
+
+.focusItemTime {
+  font-size: $font-size-sm;
+  color: rgba(255, 255, 255, 0.85);
+  margin-left: $spacing-sm;
+  white-space: nowrap;
+}
+
+.focusEmpty {
+  margin-top: $spacing-md;
+  padding: $spacing-md;
+  border-radius: $radius-md;
+  background: rgba(255, 255, 255, 0.16);
+  text-align: center;
+  font-size: $font-size-md;
+  color: $color-text-white;
+}
+
+.searchBar {
+  margin-top: $spacing-lg;
+  display: flex;
+  align-items: center;
+  background: $color-bg-card;
+  border-radius: $radius-button;
+  box-shadow: $shadow-card;
+  padding: 0 $spacing-lg;
+  height: 88rpx;
+}
+
+.searchIcon {
+  font-size: $font-size-lg;
+  margin-right: $spacing-sm;
+}
+
+.searchInput {
+  flex: 1;
+  font-size: $font-size-md;
+  color: $color-text-primary;
+}
+
+.clearBtn {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: $radius-round;
+  background: $color-bg-hover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearText {
+  color: $color-text-tertiary;
+  font-size: $font-size-sm;
+}
+
+.rangeSeg {
+  margin-top: $spacing-md;
+}
+
+.filterScroll {
+  margin-top: $spacing-md;
+  white-space: nowrap;
+}
+
+.filterChip {
+  display: inline-flex;
+  align-items: center;
+  height: 60rpx;
+  padding: 0 $spacing-lg;
+  margin-right: $spacing-sm;
+  border-radius: $radius-button;
+  background: $color-bg-card;
+  box-shadow: $shadow-card;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.filterChipActive {
+  background: $color-primary;
+}
+
+.filterChipText {
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+  white-space: nowrap;
+}
+
+.filterChipTextActive {
+  color: $color-text-white;
+  font-weight: $font-weight-semibold;
+}
+
+.resultMeta {
+  margin: $spacing-md 0 $spacing-sm;
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+}
+
+.fab {
+  position: fixed;
+  right: $spacing-lg;
+  bottom: calc(140rpx + env(safe-area-inset-bottom));
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: $radius-round;
+  background: $color-primary;
+  box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+
+  &:active {
+    transform: scale(0.94);
+    opacity: 0.92;
+  }
+}
+
+.fabText {
+  font-size: 60rpx;
+  color: $color-text-white;
+  line-height: 1;
+  margin-top: -6rpx;
+}
+
+.loading {
+  padding: $spacing-xl 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+}
+
+.loadingText {
+  font-size: $font-size-md;
+  color: $color-text-tertiary;
+}

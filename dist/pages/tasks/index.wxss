@@ -1,0 +1,320 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[4]!./src/pages/tasks/index.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.index-module__page___rTmiN {
+  min-height: 100vh;
+  padding: 24rpx 32rpx 160rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.index-module__focusCard___zbKwp {
+  background: -webkit-linear-gradient(315deg, #2563eb 0%, #4f86f7 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #4f86f7 100%);
+  border-radius: 16rpx;
+  padding: 32rpx;
+  -webkit-box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.25);
+          box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.25);
+}
+
+.index-module__focusTop___y1eIP {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index-module__focusLabel___YB6pm {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.index-module__focusDate___kDF77 {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 4rpx;
+}
+
+.index-module__focusEmoji___ulwfq {
+  font-size: 64rpx;
+}
+
+.index-module__progressRow___BwJnl {
+  margin-top: 24rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16rpx;
+}
+
+.index-module__progressTrack___mabwh {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 16rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.index-module__progressFill___e9eQX {
+  height: 100%;
+  border-radius: 999rpx;
+  background: #ffffff;
+  -webkit-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+}
+
+.index-module__progressText___R48f0 {
+  font-size: 24rpx;
+  color: #ffffff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.index-module__focusList___WEqNQ {
+  margin-top: 24rpx;
+}
+
+.index-module__focusItem___Cpj22 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 12rpx;
+  padding: 16rpx 24rpx;
+  margin-bottom: 16rpx;
+}
+
+.index-module__focusCheck___uNMdT {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 999rpx;
+  border: 4rpx solid rgba(255, 255, 255, 0.7);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 24rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.index-module__focusCheckDone___bqssO {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.index-module__focusCheckIcon___WsNjs {
+  color: #2563eb;
+  font-size: 30rpx;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.index-module__focusItemTitle___OwxHR {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+  font-size: 28rpx;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.index-module__focusItemTitleDone___mghvD {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: line-through;
+}
+
+.index-module__focusItemTime___CMrqt {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.85);
+  margin-left: 16rpx;
+  white-space: nowrap;
+}
+
+.index-module__focusEmpty___6uThy {
+  margin-top: 24rpx;
+  padding: 24rpx;
+  border-radius: 12rpx;
+  background: rgba(255, 255, 255, 0.16);
+  text-align: center;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+
+.index-module__searchBar___S7Rlq {
+  margin-top: 32rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border-radius: 48rpx;
+  -webkit-box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.08);
+  padding: 0 32rpx;
+  height: 88rpx;
+}
+
+.index-module__searchIcon___ylkz4 {
+  font-size: 32rpx;
+  margin-right: 16rpx;
+}
+
+.index-module__searchInput___CB18p {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 28rpx;
+  color: #161b26;
+}
+
+.index-module__clearBtn___BLO90 {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 999rpx;
+  background: #eef2f8;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index-module__clearText___PsCrN {
+  color: #8a93a6;
+  font-size: 24rpx;
+}
+
+.index-module__rangeSeg___cmcSb {
+  margin-top: 24rpx;
+}
+
+.index-module__filterScroll___t0vB8 {
+  margin-top: 24rpx;
+  white-space: nowrap;
+}
+
+.index-module__filterChip___O7VJB {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60rpx;
+  padding: 0 32rpx;
+  margin-right: 16rpx;
+  border-radius: 48rpx;
+  background: #ffffff;
+  -webkit-box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+.index-module__filterChip___O7VJB:active {
+  opacity: 0.8;
+}
+
+.index-module__filterChipActive___KVS8y {
+  background: #2563eb;
+}
+
+.index-module__filterChipText___Kf6cn {
+  font-size: 28rpx;
+  color: #4b5565;
+  white-space: nowrap;
+}
+
+.index-module__filterChipTextActive___n9JsW {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.index-module__resultMeta___Pix9o {
+  margin: 24rpx 0 16rpx;
+  font-size: 24rpx;
+  color: #8a93a6;
+}
+
+.index-module__fab___QuOim {
+  position: fixed;
+  right: 32rpx;
+  bottom: calc(140rpx + env(safe-area-inset-bottom));
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 999rpx;
+  background: #2563eb;
+  -webkit-box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.4);
+          box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.4);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 50;
+}
+.index-module__fab___QuOim:active {
+  -webkit-transform: scale(0.94);
+      -ms-transform: scale(0.94);
+          transform: scale(0.94);
+  opacity: 0.92;
+}
+
+.index-module__fabText___lnwm3 {
+  font-size: 60rpx;
+  color: #ffffff;
+  line-height: 1;
+  margin-top: -6rpx;
+}
+
+.index-module__loading___RInt8 {
+  padding: 48rpx 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16rpx;
+}
+
+.index-module__loadingText___CKwMg {
+  font-size: 28rpx;
+  color: #8a93a6;
+}

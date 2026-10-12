@@ -1,0 +1,91 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[0].use[4]!./src/pages/about/index.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.index-module__page___bvY7c {
+  min-height: 100vh;
+  padding: 48rpx 32rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-module__logo___QCw2u {
+  margin-top: 48rpx;
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 20rpx;
+  background: -webkit-linear-gradient(315deg, #2563eb 0%, #4f86f7 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #4f86f7 100%);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 72rpx;
+  -webkit-box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.3);
+          box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.3);
+}
+
+.index-module__name___Ga4Ir {
+  margin-top: 32rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #161b26;
+}
+
+.index-module__version___yA8AV {
+  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: #8a93a6;
+}
+
+.index-module__desc___roOox {
+  margin-top: 32rpx;
+  font-size: 28rpx;
+  color: #4b5565;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.index-module__placeholder___lRmS1 {
+  margin-top: 48rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  -webkit-box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.08);
+  padding: 48rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.index-module__placeholderEmoji___OzYcr {
+  font-size: 72rpx;
+}
+
+.index-module__placeholderText___OpBeF {
+  margin-top: 24rpx;
+  font-size: 32rpx;
+  color: #4b5565;
+}

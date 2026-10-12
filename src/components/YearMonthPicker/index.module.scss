@@ -1,0 +1,124 @@
+@use '@/styles/variables.scss' as *;
+
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(22, 27, 38, 0.45);
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sheet {
+  width: 100%;
+  background: $color-bg-card;
+  border-radius: $radius-xl $radius-xl 0 0;
+  padding-bottom: calc(#{$spacing-lg} + env(safe-area-inset-bottom));
+  box-shadow: $shadow-popup;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-lg $spacing-lg $spacing-md;
+}
+
+.title {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+.close {
+  font-size: $font-size-lg;
+  color: $color-text-tertiary;
+  padding: $spacing-xs;
+}
+
+.body {
+  display: flex;
+  height: 520rpx;
+  margin: 0 $spacing-lg;
+  border: 2rpx solid $color-border;
+  border-radius: $radius-md;
+  overflow: hidden;
+}
+
+.yearCol {
+  width: 200rpx;
+  height: 100%;
+  background: $color-bg-hover;
+}
+
+.yearItem {
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+}
+
+.yearItemActive {
+  background: $color-bg-card;
+  color: $color-primary;
+  font-weight: $font-weight-semibold;
+}
+
+.monthGrid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: $spacing-sm;
+}
+
+.monthItem {
+  width: 33.33%;
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size-md;
+  color: $color-text-primary;
+  border-radius: $radius-md;
+
+  &:active {
+    background: $color-bg-hover;
+  }
+}
+
+.monthItemCurrent {
+  color: $color-primary;
+  font-weight: $font-weight-semibold;
+}
+
+.monthItemActive {
+  background: $color-primary;
+  color: $color-text-white;
+  font-weight: $font-weight-semibold;
+}
+
+.confirm {
+  margin: $spacing-lg $spacing-lg 0;
+  height: $button-height-lg;
+  border-radius: $radius-button;
+  background: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.confirmText {
+  color: $color-text-white;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+}

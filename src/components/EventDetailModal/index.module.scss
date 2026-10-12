@@ -1,0 +1,236 @@
+@use '@/styles/variables.scss' as *;
+
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(22, 27, 38, 0.45);
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sheet {
+  position: relative;
+  width: 100%;
+  max-height: 82vh;
+  background: $color-bg-card;
+  border-radius: $radius-xl $radius-xl 0 0;
+  box-shadow: $shadow-popup;
+  padding: $spacing-sm $spacing-lg calc(#{$spacing-lg} + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+// 星光粒子层：覆盖弹窗、不拦截点击、动效结束即卸载
+.fxCanvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.handleBar {
+  width: 72rpx;
+  height: 8rpx;
+  border-radius: $radius-round;
+  background: $color-border;
+  margin: $spacing-xs auto $spacing-sm;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catChip {
+  border-radius: $radius-xs;
+  padding: 6rpx 16rpx;
+}
+
+.catText {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+}
+
+.doneFlag {
+  background: rgba(22, 163, 74, 0.12);
+  border-radius: $radius-xs;
+  padding: 6rpx 16rpx;
+  transform-origin: right center;
+  animation: doneFlagPop 0.45s cubic-bezier(0.22, 1.4, 0.36, 1) both;
+}
+
+@keyframes doneFlagPop {
+  0% { opacity: 0; transform: scale(0.4); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.doneFlagText {
+  font-size: $font-size-sm;
+  color: $color-done;
+  font-weight: $font-weight-semibold;
+}
+
+.title {
+  margin-top: $spacing-md;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  line-height: $line-height-tight;
+}
+
+.titleDone {
+  color: $color-text-tertiary;
+  text-decoration: line-through;
+}
+
+.body {
+  margin-top: $spacing-md;
+  max-height: 46vh;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  padding: $spacing-sm 0;
+  border-bottom: 2rpx solid $color-divider;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.rowIcon {
+  width: 56rpx;
+  font-size: 34rpx;
+  line-height: 1.4;
+}
+
+.rowContent {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowLabel {
+  flex: 1;
+  font-size: $font-size-lg;
+  color: $color-text-primary;
+  word-break: break-all;
+}
+
+.rowSub {
+  margin-top: 4rpx;
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+}
+
+.remark {
+  flex: 1;
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+  line-height: $line-height-loose;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+}
+
+.personChip {
+  background: $color-bg-hover;
+  border-radius: $radius-round;
+  padding: 6rpx 20rpx;
+}
+
+.personText {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+}
+
+.footer {
+  margin-top: $spacing-md;
+}
+
+.doneBtn {
+  height: $button-height-lg;
+  border-radius: $radius-button;
+  background: $color-done;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+.doneBtnUndo {
+  background: $color-bg-hover;
+}
+
+.doneBtnText {
+  color: $color-text-white;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+}
+
+.doneBtnUndo .doneBtnText {
+  color: $color-text-secondary;
+}
+
+.secondaryRow {
+  margin-top: $spacing-md;
+  display: flex;
+  gap: $spacing-md;
+}
+
+.editBtn {
+  flex: 1;
+  height: $button-height-md;
+  border-radius: $radius-button;
+  background: $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+.editBtnText {
+  color: $color-text-white;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+}
+
+.deleteBtn {
+  flex: 1;
+  height: $button-height-md;
+  border-radius: $radius-button;
+  background: rgba(220, 38, 38, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.deleteBtnText {
+  color: $color-error;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+}

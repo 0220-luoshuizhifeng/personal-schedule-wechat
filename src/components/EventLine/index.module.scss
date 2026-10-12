@@ -1,0 +1,138 @@
+@use '@/styles/variables.scss' as *;
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: $color-bg-card;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+  padding: $spacing-md $spacing-md $spacing-md $spacing-lg;
+  margin-bottom: $spacing-sm;
+  overflow: hidden;
+
+  &:active {
+    background: $color-bg-hover;
+  }
+}
+
+.rowDone {
+  opacity: 0.75;
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8rpx;
+}
+
+.check {
+  flex-shrink: 0;
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: $radius-round;
+  border: 4rpx solid $color-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: $spacing-md;
+  box-sizing: border-box;
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.checkDone {
+  background: $color-done;
+  border-color: $color-done;
+}
+
+.checkIcon {
+  color: $color-text-white;
+  font-size: 32rpx;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+  color: $color-text-primary;
+  @include text-ellipsis;
+}
+
+.titleDone {
+  color: $color-text-tertiary;
+  text-decoration: line-through;
+}
+
+.metaRow {
+  margin-top: 6rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+}
+
+.time {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+}
+
+.timeOverdue {
+  color: $color-overdue;
+  font-weight: $font-weight-semibold;
+}
+
+.tag {
+  border-radius: $radius-xs;
+  padding: 2rpx 12rpx;
+}
+
+.tagText {
+  font-size: $font-size-xs;
+  white-space: nowrap;
+}
+
+.location {
+  margin-top: 6rpx;
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+  @include text-ellipsis;
+}
+
+.arrow {
+  flex-shrink: 0;
+  margin-left: $spacing-sm;
+  font-size: 40rpx;
+  color: $color-text-disabled;
+  line-height: 1;
+}
+
+.groupHeader {
+  display: flex;
+  align-items: baseline;
+  gap: $spacing-sm;
+  padding: $spacing-md $spacing-xs $spacing-sm;
+}
+
+.groupHeaderText {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+.groupHeaderWeek {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+}
